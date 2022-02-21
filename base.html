@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wordle</title>
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header box -->
+            <div class="heading-box">
+                <h1 class="heading">Guess your word</h1>
+            </div>
+
+            <!-- Box 1 -->
+            <div class="box-one inner-box-container">
+                <input
+                    type="text"
+                    id="box-one--one"
+                    class="inner-box"
+                    maxlength="1"
+                />
+
+                <input
+                    type="text"
+                    id="box-one--two"
+                    class="inner-box"
+                    maxlength="1"
+                />
+
+                <input
+                    type="text"
+                    id="box-one--three"
+                    class="inner-box"
+                    maxlength="1"
+                />
+
+                <input
+                    type="text"
+                    id="box-one--four"
+                    class="inner-box"
+                    maxlength="1"
+                />
+
+                <input
+                    type="text"
+                    id="box-one--five"
+                    class="inner-box"
+                    maxlength="1"
+                />
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box-two inner-box-container">
+                <input
+                    type="text"
+                    id="box-two--one"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-two--two"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-two--three"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-two--four"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-two--five"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+            </div>
+
+            <!-- Box 3 -->
+            <div class="box-three inner-box-container">
+                <input
+                    type="text"
+                    id="box-three--one"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-three--two"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-three--three"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-three--four"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-three--five"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+            </div>
+
+            <!-- Box 4 -->
+            <div class="box-four inner-box-container">
+                <input
+                    type="text"
+                    id="box-four--one"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-four--two"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-four--three"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-four--four"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-four--five"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+            </div>
+
+            <!-- Box 5 -->
+            <div class="box-five inner-box-container">
+                <input
+                    type="text"
+                    id="box-five--one"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-five--two"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-five--three"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-five--four"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+
+                <input
+                    type="text"
+                    id="box-five--five"
+                    class="inner-box"
+                    maxlength="1"
+                    disabled
+                />
+            </div>
+
+            <!-- Button box -->
+            <div class="button-box">
+                <input
+                    type="button"
+                    class="checkButton"
+                    id="checkButton"
+                    value="CHECK"
+                />
+            </div>
+        </div>
+
+        <div id="modal-container" class="modal-container">
+            <div class="modal">
+                <h1 id="modal-heading" class="modal-heading">You Won 🤗</h1>
+                <div class="correct-answer-container">
+                    <h2 class="correct-answer" id="correct-answer-one">A</h2>
+                    <h2 class="correct-answer" id="correct-answer-two">A</h2>
+                    <h2 class="correct-answer" id="correct-answer-three">A</h2>
+                    <h2 class="correct-answer" id="correct-answer-four">A</h2>
+                    <h2 class="correct-answer" id="correct-answer-five">A</h2>
+                </div>
+                <div class="modal-button-box">
+                    <input
+                        type="button"
+                        class="nextButton"
+                        id="nextButton"
+                        value="NEXT"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
